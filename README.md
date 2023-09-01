@@ -32,4 +32,6 @@ We believe that our code can also run on other systems with different versions o
 
 It should be noted that, based on development experience, if using a higher version of PyTorch to run code developed based on a lower version of PyTorch, it may be necessary to adjust the order of the loss function and its updated model parameter modules in the training algorithm.
 
+We utilize the proposed FNI-RL approach to train the autonomous driving agent in the popular [Simulation of Urban Mobility](https://eclipse.dev/sumo/) (SUMO, Version 1.2.0) platform.
+
 
