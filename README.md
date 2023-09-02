@@ -28,10 +28,12 @@ In all demonstrations, the red-colored car represents the FNI-RL-driven autonomo
 ## Installation
 This repo is developed using Python 3.7 and PyTorch 1.3.1+CPU in Ubuntu 16.04. 
 
-We believe that our code can also run on other operating systems with different versions of Python or PyTorch, but we have not verified it.
+We utilize the proposed FNI-RL approach to train the autonomous driving agent in the popular [Simulation of Urban Mobility](https://eclipse.dev/sumo/) (SUMO, Version 1.2.0) platform.
+
+We believe that our code can also run on other operating systems with different versions of Python, PyTorch and SUMO, but we have not verified it.
 
 It should be noted that, based on development experience, if using a higher version of PyTorch to run code developed based on a lower version of PyTorch, it may be necessary to adjust the order of the loss function and its updated model parameter modules in the training algorithm.
 
-We utilize the proposed FNI-RL approach to train the autonomous driving agent in the popular [Simulation of Urban Mobility](https://eclipse.dev/sumo/) (SUMO, Version 1.2.0) platform.
+
 
 
