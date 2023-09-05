@@ -32,8 +32,6 @@ We utilize the proposed FNI-RL approach to train the autonomous driving agent in
 
 We believe that our code can also run on other operating systems with different versions of Python, PyTorch and SUMO, but we have not verified it.
 
-It should be noted that, based on development experience, if using a higher version of PyTorch to run code developed based on a lower version of PyTorch, it may be necessary to adjust the order of the loss function and its updated model parameter modules in the training algorithm.
-
 The required packages can be installed using
 
 	pip install -r requirements.txt
