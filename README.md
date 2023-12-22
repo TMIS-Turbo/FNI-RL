@@ -5,7 +5,7 @@ This research has been published in [IEEE TPAMI](https://ieeexplore.ieee.org/abs
 
 ## Introduction
 ### Schematic of the Proposed FNI-RL Framework for Safe Autonomous Driving
-<img src="gif/framework.png" alt="ENV" width="720" height="360">
+<img src="gif/framework.png" alt="ENV" width="790" height="395">
 In recent years, many neuroscientists have argued that, the specific fear nervous system (i.e., amygdala) in the brain plays a central role, which can predict dangers and elicit defensive behavioral responses against threats and harms; this is crucial for survival in and adaptation to potential risky environments. Additionally, some studies in neuroscience and psychology have highlighted the necessity of actively forecasting hazards or contingencies via world models to ensure the survival of organisms. Motivated by the above insights, we devised a brain-like machine intelligence paradigm by introducing an adversarial imagination mechanism into a constrained reinforcement learning framework, allowing autonomous vehicles to acquire a sense of fear, thereby enhancing or ensuring safety.
 
 ## Demonstration
