@@ -52,7 +52,7 @@ The required packages can be installed using
 	python run_long_dis_task.py --env_name TrafficEnv5-v0
 
 ## Acknowledgement
-We appreciate the important references provided by the two code repositories [SMBPO](https://github.com/gwthomas/Safe-MBPO) and [SAC](https://github.com/denisyarats/pytorch_sac) for the implementation of our research.
+We greatly appreciate the important references provided by the two code repositories [SMBPO](https://github.com/gwthomas/Safe-MBPO) and [SAC](https://github.com/denisyarats/pytorch_sac) for the implementation of our research.
 
 ## Citation
 If you find this repository helpful for your research, we would greatly appreciate it if you could star our repository and cite our work.
