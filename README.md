@@ -14,19 +14,19 @@ The video demonstration of our work can be found:
 
 In all demonstrations, the red-colored car represents the FNI-RL-driven autonomous vehicle.
 
-###  1. Unprotected left turn at an unsignalized intersection with oncoming traffic
+###  1. Unprotected left turn task at an unsignalized intersection with oncoming traffic (TrafficEnv1-v0)
 <img src="gif/env-(a).gif" alt="Scenario (a)" width="300" height="300">
 
-###  2. Right turn at an unsignalized intersection with crossing traffic
+###  2. Unprotected right turn task at an unsignalized intersection with crossing traffic (TrafficEnv2-v0)
 <img src="gif/env-(b).gif" alt="Scenario (b)" width="300" height="300">
 
-###  3. Unprotected left turn at an unsignalized intersection with mixed traffic flows
+###  3. Unprotected left turn task at an unsignalized intersection with mixed traffic flows (TrafficEnv3-v0)
 <img src="gif/env-(c).gif" alt="Scenario (c)" width="300" height="300">
 
-###  4. Crossing negotiation at an unsignalized intersection with mixed traffic flows
+###  4. Unprotected crossing negotiation task at an unsignalized intersection with mixed traffic flows (TrafficEnv4-v0)
 <img src="gif/env-(d).gif" alt="Scenario (d)" width="300" height="300">
 
-###  5. Long-term goal-driven navigation with mixed traffic flows
+###  5. Long-term goal-driven navigation task with mixed traffic flows (TrafficEnv5-v0)
 <img src="gif/env-(e)-1.gif" alt="Scenario (e1)" width="500" height="300">
 <img src="gif/env-(e)-2.gif" alt="Scenario (e2)" width="500" height="300">
 
