@@ -52,7 +52,7 @@ class FNIRL(Configurable, Module):
         buffer.to(device)
         return DummyModuleWrapper(buffer)
 
-    def interaction(self, max_episode_steps, score, v, v_epi, speed_range, max_a, n_epi, warm_up=100, scale=10.0):
+    def interaction(self, max_episode_steps, score, v, v_epi, speed_range, max_a, n_epi, warm_up=10, scale=10.0):
         episode = self._create_buffer(max_episode_steps)
         state = self.real_env.reset()
 
