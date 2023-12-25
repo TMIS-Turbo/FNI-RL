@@ -1,5 +1,5 @@
 # FNI-RL
-This repo is the implementation of our research "**[Fear-Neuro-Inspired Reinforcement Learning for Safe Autonomous Driving](https://www.researchgate.net/publication/374522737_Fear-Neuro-Inspired_Reinforcement_Learning_for_Safe_Autonomous_Driving)**". This research has been published in [IEEE TPAMI](https://ieeexplore.ieee.org/abstract/document/10273631). 
+This repository is the implementation of our research "**[Fear-Neuro-Inspired Reinforcement Learning for Safe Autonomous Driving](https://www.researchgate.net/publication/374522737_Fear-Neuro-Inspired_Reinforcement_Learning_for_Safe_Autonomous_Driving)**". This research has been published in [IEEE TPAMI](https://ieeexplore.ieee.org/abstract/document/10273631). 
 
 Additionally, FNI-RL has also been featured by IEEE Spectrum Magazine: [Neural Reactions to Fear Make AI Drive More Safely](https://spectrum.ieee.org/autonomous-vehicle-safety-defensive-driving).
 
