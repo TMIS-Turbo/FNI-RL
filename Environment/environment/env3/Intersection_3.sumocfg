@@ -1,0 +1,30 @@
+<?xml version="1.0" ?><configuration>
+
+    <input>
+        <net-file value="Intersection_3.net.xml"/>
+        <route-files value="Intersection_3.rou.xml"/>
+		<collision.action value="remove"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+    </time>
+
+    <report>
+        <verbose value="true"/>
+        <no-step-log value="true"/>
+    </report>
+    <gui_only>
+        <quit-on-end value="true"/>
+        <start value="true"/>
+    </gui_only>
+    <random_numberType>
+        <random value="false"/>
+        <seed value="638"/>
+    </random_numberType>
+    <processing>
+        <lanechange.overtake-right value="false"/>
+	<lanechange.duration value="0"/>
+    </processing>
+
+</configuration>
