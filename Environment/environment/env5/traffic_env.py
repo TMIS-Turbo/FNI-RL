@@ -42,6 +42,8 @@ class Traffic_Env(gym.Env):
         self.max_dis_navigation = 2500.0
         self.max_acc = 7.6
         self.reset_times = 0
+        self.previous_obs = []
+        self.previous_info = []
 
     def raw_obs(self, vehicle_params):  # dimension: 24+5
         obs = []
@@ -115,11 +117,11 @@ class Traffic_Env(gym.Env):
             obs.append(dis_goal_ego)
             info = [ego_veh_x, ego_veh_y]
 
+            self.previous_obs = obs
+            self.previous_info = info
         else:
-            obs = [self.maxDistance, 0.0, 0.0, 0.0, self.maxDistance, 0.0, 0.0, 0.0,self.maxDistance, 0.0, 0.0, 0.0,\
-                   self.maxDistance, 0.0, 0.0, 0.0,self.maxDistance, 0.0, 0.0, 0.0, self.maxDistance, 0.0, 0.0, 0.0,\
-                   0.0, 0.0, self.maxDistance, 0.0, self.max_dis_navigation]
-            info = [0.0, 0.0]
+            obs = self.previous_obs
+            info = self.previous_info
 
         return obs, info
 
