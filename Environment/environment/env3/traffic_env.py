@@ -78,6 +78,7 @@ class Traffic_Env(gym.Env):
                         zone[5][0].append(VehID)
                         zone[5][1].append(dis)
                         zone[5][2].append(angle)
+                        
             for z in zone:
                 if len(z[0]) == 0:
                     obs.append(self.maxDistance)
