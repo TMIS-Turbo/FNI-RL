@@ -55,27 +55,27 @@ class Traffic_Env(gym.Env):
                 if VehID != self.AutoCarID and dis < self.maxDistance:
                     angle = math.degrees(math.atan2(veh_y-ego_veh_y, veh_x-ego_veh_x))
 
-                    if 0 <= angle < math.degrees(math.atan2(3**0.5, 1)): # 0~60
+                    if -90.0 <= angle < -10.0: # fr
                         zone[0][0].append(VehID)
                         zone[0][1].append(dis)
                         zone[0][2].append(angle)
-                    elif math.degrees(math.atan2(3**0.5, 1)) <= angle < math.degrees(math.atan2(3**0.5, -1)): # 60~120
+                    elif -10.0 <= angle <= 10.0: # f
                         zone[1][0].append(VehID)
                         zone[1][1].append(dis)
                         zone[1][2].append(angle)
-                    elif math.degrees(math.atan2(3**0.5, -1)) <= angle < 180: # 120~180
+                    elif 10.0 < angle < 90.0: # fl
                         zone[2][0].append(VehID)
                         zone[2][1].append(dis)
                         zone[2][2].append(angle)
-                    elif -180 <= angle < math.degrees(math.atan2(-3**0.5, -1)): # -180~-120
+                    elif 90.0 <= angle < 170.0: # rl
                         zone[3][0].append(VehID)
                         zone[3][1].append(dis)
                         zone[3][2].append(angle)
-                    elif math.degrees(math.atan2(-3**0.5, -1)) <= angle < math.degrees(math.atan2(-3**0.5, 1)): # -120~-60
+                    elif 170.0 <= angle <= 180.0 or -180.0 <= angle <= -170.0: # r
                         zone[4][0].append(VehID)
                         zone[4][1].append(dis)
                         zone[4][2].append(angle)
-                    else: # -60~0
+                    elif -170.0 < angle < -90.0: # rr
                         zone[5][0].append(VehID)
                         zone[5][1].append(dis)
                         zone[5][2].append(angle)
