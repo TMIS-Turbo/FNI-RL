@@ -32,8 +32,6 @@ config_path = os.path.dirname(__file__)+"/../../../Environment/environment/env3/
 
 class Traffic_Env(gym.Env):
     def __init__(self):
-        self.state_dim = 26
-        self.action_dim = 1
         self.maxDistance = 200.0
         self.maxSpeed = 15.0
         self.max_angle = 360.0
