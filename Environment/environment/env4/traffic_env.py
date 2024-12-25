@@ -38,6 +38,8 @@ class Traffic_Env(gym.Env):
         self.max_angle = 360.0
         self.AutoCarID = 'Auto'
         self.reset_times = 0
+        self.previous_obs = []
+        self.previous_info = []
 
     def raw_obs(self, vehicle_params):
         obs = []
@@ -94,11 +96,12 @@ class Traffic_Env(gym.Env):
             obs.append(traci.vehicle.getSpeed(self.AutoCarID))
             obs.append(traci.vehicle.getAngle(self.AutoCarID))
             info = [ego_veh_x, ego_veh_y]
+            
+            self.previous_obs = obs
+            self.previous_info = info
         else:
-            obs = [self.maxDistance, 0.0, 0.0, 0.0, self.maxDistance, 0.0, 0.0, 0.0,self.maxDistance, 0.0, 0.0, 0.0,\
-                   self.maxDistance, 0.0, 0.0, 0.0,self.maxDistance, 0.0, 0.0, 0.0, self.maxDistance, 0.0, 0.0, 0.0,\
-                   0.0, 0.0]
-            info = [0.0, 0.0]
+            obs = self.previous_obs
+            info = self.previous_info
 
         return obs, info
 
